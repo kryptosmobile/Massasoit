@@ -148,6 +148,8 @@
                 <string>gmm</string>
                 <string>ms-outlook</string>
                 <string>eaccountsapp</string>
+                 <string>googlegmail</string>
+                
             </array>
         </gap:config-file>
         
