@@ -44,32 +44,6 @@
       ]
     },
     {
-      "id": 165979,
-      "name": "Canvas307",
-      "displayname": "Canvas",
-      "logo": "Massasoit/Canvas307.png",
-      "logourl": "Massasoit/Canvas307.png",
-      "description": "Canvas",
-      "appFeatureType": "Student",
-      "roles": null,
-      "showInDock": false,
-      "showInHome": true,
-      "networkrequired": true,
-      "analytics": false,
-      "pages": 
-      [
-        {
-          "pageid": "Canvas307",
-          "pageTemplate": "<div><\/div>",
-          "pageprocessor": "function pageprocessorCanvas307(pagedef, $scope, $routeParams, $compile, $http, $rootScope, $sce, $window, $location) {if (window.device) {var successCallback = function() {$location.path(\"/home\");};if (window.device.platform == \"Android\") {var errorCallback = function() {$scope.loadurl(pagedef.playstoreurl);$location.path(\"/home\");};window.plugins.launcher.launch({packageName: pagedef.androidpackage}, successCallback, errorCallback);} else if (window.device.platform == \"iOS\") {var errorCallback = function() {$scope.loadurl(pagedef.itunesurl);};window.plugins.launcher.launch({uri: pagedef.iosuri}, successCallback, errorCallback);}} else {apprise(\"This feature is not available on Emulator\", {\"verify\": false,\"textYes\": \"Ok\"}, function(r) {});}$scope.loadurl = function(url) {if (window.device) {$.blockUI();}var iabRef = window.open(url, device.platform == \"Android\" ? \"_system\" : \"_blank\", \"location=no,hidden=yes\");var hideBlockUi = function() {iabRef.show();$.unblockUI();};var iabClose = function(data) {window.location.href = \"index.html#home\";};iabRef.addEventListener(\"exit\", iabClose);var loadStop = function(data) {hideBlockUi();};iabRef.addEventListener(\"loadstop\", loadStop);}}",
-          "androidpackage": "com.instructure.candroid",
-          "playstoreurl": "https://play.google.com/store/apps/details?id=com.instructure.candroid&hl=en",
-          "iosuri": "canvas-courses://",
-          "itunesurl": "https://itunes.apple.com/us/app/canvas-student/id480883488?mt=8"
-        }
-      ]
-    },
-    {
       "id": 84468,
       "name": "Canvas230",
       "displayname": "Canvas",
