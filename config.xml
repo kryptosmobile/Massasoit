@@ -110,7 +110,7 @@
         <gap:plugin name="cordova-plugin-geolocation" source="npm" spec="1.0.1"/>
         <gap:plugin name="cordova-plugin-geolocation" source="npm" />
 
-        <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+        <gap:plugin name="cordova-plugin-inappbrowser" spec="3.2.0" source="npm" />
         <gap:plugin name="cordova-plugin-network-information" source="npm" />
         <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
         <gap:plugin name="cordova-plugin-statusbar" source="npm"/>
